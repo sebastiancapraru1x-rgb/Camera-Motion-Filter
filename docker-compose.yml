@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  aicamera:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"   # FastAPI API + React dashboard
+    volumes:
+      - ./:/app
+    env_file: .env

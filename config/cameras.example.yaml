@@ -1,0 +1,26 @@
+# Per-camera configuration (example)
+cameras:
+  - id: driveway
+    source: blink          # file | url | webcam | rtsp | blink
+    target_classes: [person, car, truck, motorcycle, dog]
+    conf_threshold: 0.6
+    min_consecutive_frames: 3
+    frame_sample_every: 4
+    ignore_zones: []       # list of polygons: [[[x,y],...]]
+    active_hours: ["00:00", "23:59"]
+  - id: backyard
+    source: file
+    target_classes: [person]
+    conf_threshold: 0.55
+    min_consecutive_frames: 2
+    frame_sample_every: 4
+    ignore_zones: []
+    active_hours: ["18:00", "06:00"]
+  - id: front_door
+    source: blink
+    target_classes: [person, car, truck, motorcycle, dog]
+    conf_threshold: 0.6
+    min_consecutive_frames: 3
+    frame_sample_every: 4
+    ignore_zones: []
+    active_hours: ["00:00", "23:59"]

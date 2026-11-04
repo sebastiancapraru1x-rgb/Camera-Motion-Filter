@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Data & logs (keep folders, ignore contents)
+data/inbox/*
+data/processing/*
+data/alerts/*
+data/false_alarms/*
+data/archive/*
+logs/*
+models/*.pt
+eval/data/
+
+# OS
+.DS_Store
+
+# Keep directory placeholders
+!.gitkeep
