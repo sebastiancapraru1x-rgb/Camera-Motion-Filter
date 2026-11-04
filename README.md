@@ -1,7 +1,7 @@
 # AI Camera — Blink False-Motion Filter
 
 Source-agnostic computer-vision pipeline that filters false motion alerts
-(wind, shadows, trees) from Blink cameras and only notifies you (Discord) when
+(wind, shadows, trees) from Blink cameras and only notifies you through webhooks (Discord,Telegram etc..) when
 a real object (person, car, etc.) is detected.
 
 > Status: **Complete**. All 5 phases implemented — file/URL/webcam/Blink sources, detection, tracking, filtering, Discord alerts, FastAPI receiver, React dashboard, Docker, CI, and launchd.
